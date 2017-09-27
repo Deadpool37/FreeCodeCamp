@@ -1,5 +1,7 @@
-version: v1.5.0
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
 ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:marked:20150520':
     - gulp-notify > node-notifier > cli-usage > marked:
@@ -75,3 +77,14 @@ patch:
   'npm:uglify-js:20150824':
     - jade > transformers > uglify-js:
         patched: '2016-07-29T23:00:15.905Z'
+  'npm:debug:20170905':
+    - compression > debug:
+        patched: '2017-09-27T02:10:14.734Z'
+    - method-override > debug:
+        patched: '2017-09-27T02:10:14.734Z'
+    - morgan > debug:
+        patched: '2017-09-27T02:10:14.734Z'
+    - helmet > connect > debug:
+        patched: '2017-09-27T02:10:14.734Z'
+    - helmet > connect > finalhandler > debug:
+        patched: '2017-09-27T02:10:14.734Z'
