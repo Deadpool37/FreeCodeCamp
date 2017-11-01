@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.8.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -88,3 +88,6 @@ patch:
         patched: '2017-09-27T02:10:14.734Z'
     - helmet > connect > finalhandler > debug:
         patched: '2017-09-27T02:10:14.734Z'
+  'npm:marked:20170907':
+    - gitter-sidecar > marked:
+        patched: '2017-11-01T02:10:18.477Z'
